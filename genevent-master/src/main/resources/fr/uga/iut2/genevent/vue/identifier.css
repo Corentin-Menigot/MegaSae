@@ -1,0 +1,17 @@
+.annulerButton {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.creerButton{
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.annulerButton:hover {
+    -fx-background-color: #0b7dda;
+}
+
+.creerButton:hover {
+    -fx-background-color: #0b7dda;
+}

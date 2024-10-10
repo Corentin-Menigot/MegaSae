@@ -1,0 +1,25 @@
+VBox {
+     -fx-background-color: white;
+}
+
+.vboxdriote{
+    -fx-background-color: grey;
+}
+
+.signUpButton {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.loginButton{
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.loginButton:hover {
+    -fx-background-color: #0b7dda;
+}
+
+.signUpButton:hover {
+    -fx-background-color: #0b7dda;
+}

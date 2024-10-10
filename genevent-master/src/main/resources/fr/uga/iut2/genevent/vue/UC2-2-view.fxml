@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="982.0" stylesheets="@evenement.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox prefHeight="553.0" prefWidth="982.0">
+            <children>
+                <VBox prefHeight="523.0" prefWidth="523.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="53.0" prefWidth="490.0" text="Créez votre évènement" textFill="#0310c9">
+                            <font>
+                                <Font name="System Bold" size="31.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="20.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="324.0" text="Nom évènement">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="18.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="nomEvene" promptText="Nom Obligatoire">
+                            <VBox.margin>
+                                <Insets left="18.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Label prefHeight="18.0" prefWidth="111.0" text="Localisation">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="18.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="localisationEvene" promptText="Nom de Lieu">
+                            <VBox.margin>
+                                <Insets left="18.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <GridPane prefHeight="51.0" prefWidth="484.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <children>
+                                <VBox prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label text="Date début">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font></Label>
+                                        <DatePicker fx:id="dateDebut" promptText="Insérer la Date">
+                                            <VBox.margin>
+                                                <Insets right="18.0" />
+                                            </VBox.margin>
+                                        </DatePicker>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets left="18.0" top="20.0" />
+                                    </GridPane.margin>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                    <children>
+                                        <Label prefHeight="18.0" prefWidth="130.0" text="Date fin">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font></Label>
+                                        <DatePicker fx:id="dateFin" promptText="Insérer la Date">
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </DatePicker>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets left="18.0" top="20.0" />
+                                    </GridPane.margin>
+                                </VBox>
+                            </children>
+                        </GridPane>
+                        <GridPane prefHeight="203.0" prefWidth="428.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="153.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="158.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="117.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="100.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <VBox.margin>
+                                <Insets left="18.0" top="35.0" />
+                            </VBox.margin>
+                            <children>
+                                <Label text="Prix" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="prixEau" promptText="Prix Supérieur à 0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </TextField>
+                                <TextField fx:id="prixGaz" promptText="Prix Supérieur à 0" GridPane.columnIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </TextField>
+                                <TextField fx:id="prixElec" promptText="Prix Supérieur à 0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </TextField>
+                                <CheckBox fx:id="isGaz" mnemonicParsing="false" prefHeight="18.0" prefWidth="67.0" text="Gaz" />
+                                <CheckBox fx:id="isEau" mnemonicParsing="false" prefHeight="18.0" prefWidth="59.0" text="Eau" GridPane.rowIndex="1" />
+                                <CheckBox fx:id="isElec" mnemonicParsing="false" text="Electricité" GridPane.rowIndex="2" />
+                                <Label prefHeight="18.0" prefWidth="149.0" text="Dimension du plan " GridPane.rowIndex="3">
+                                    <GridPane.margin>
+                                        <Insets top="-10.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Label>
+                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <children>
+                                        <Label prefHeight="18.0" prefWidth="72.0" text="Longueur">
+                                            <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="rowsField" prefHeight="26.0" prefWidth="95.0" promptText="Supérieure à 0" />
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets bottom="20.0" left="15.0" top="10.0" />
+                                    </GridPane.margin>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                    <children>
+                                        <Label prefHeight="18.0" prefWidth="69.0" text="Largeur">
+                                            <padding>
+                                                <Insets left="15.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="colsField" promptText="Supérieure à 0">
+                                            <VBox.margin>
+                                                <Insets left="15.0" />
+                                            </VBox.margin>
+                                        </TextField>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets top="10.0" />
+                                    </GridPane.margin>
+                                </VBox>
+                            </children>
+                        </GridPane>
+                        <Label prefHeight="18.0" prefWidth="192.0" text="Dispositions proposées">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="18.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button fx:id="newEvenementCancelButton" mnemonicParsing="false" onAction="#cancelNewEvenmentAction" prefHeight="26.0" prefWidth="144.0" styleClass="disposition" text="Annuler">
+                                    <GridPane.margin>
+                                        <Insets left="18.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#genereAutoMatrice" prefHeight="26.0" prefWidth="144.0" styleClass="disposition" text="Générée" GridPane.columnIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="18.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#genereMatrice" prefHeight="26.0" prefWidth="144.0" styleClass="disposition" text="Céer Map" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                    <GridPane.margin>
+                                        <Insets left="18.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="validedButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ajouteList" styleClass="disposition" text="Valider" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font></Button>
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+                <GridPane fx:id="matrixGrid" alignment="CENTER" maxWidth="523.0" prefHeight="523.0" prefWidth="523.0">
+                    <HBox.margin>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                    </HBox.margin>
+                </GridPane>
+            </children>
+        </HBox>
+    </children>
+</VBox>

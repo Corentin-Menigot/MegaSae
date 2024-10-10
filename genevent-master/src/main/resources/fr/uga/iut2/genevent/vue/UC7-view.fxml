@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="971.0" stylesheets="@ajouterCommercant.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <HBox prefHeight="523.0" prefWidth="940.0">
+         <children>
+            <VBox prefHeight="503.0" prefWidth="487.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="64.0" prefWidth="487.0" text="Ajouter un commerçant" textFill="#5305b9">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="70.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <GridPane prefHeight="190.0" prefWidth="487.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="190.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="297.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="102.0" text="Nom :">
+                           <GridPane.margin>
+                              <Insets left="40.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="107.0" text="Prénom :" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="40.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="236.0" GridPane.columnIndex="1" />
+                        <Label prefHeight="18.0" prefWidth="285.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="commercantNomTextfield" onInputMethodTextChanged="#validateCommercantTextFields" onKeyPressed="#validateCommercantTextFields" onKeyReleased="#validateCommercantTextFields" onKeyTyped="#validateCommercantTextFields" promptText="Insérez votre nom" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets right="30.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="commercantPrenomTextField" onInputMethodTextChanged="#validateCommercantTextFields" onKeyPressed="#validateCommercantTextFields" onKeyReleased="#validateCommercantTextFields" onKeyTyped="#validateCommercantTextFields" promptText="Insérez votre prénom" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="30.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <VBox alignment="CENTER" prefHeight="63.0" prefWidth="180.0" GridPane.rowIndex="2">
+                           <children>
+                              <Label prefHeight="19.0" prefWidth="107.0" text="Id :">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Label fx:id="labelNumId" prefHeight="26.0" prefWidth="296.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="8.0" right="30.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="terminerCommercantButton" mnemonicParsing="false" onAction="#ajouterCommercantTerminer" prefHeight="22.0" prefWidth="200.0" styleClass="validerButton" text="Terminer">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="validerCommercantButton1" layoutX="87.0" layoutY="37.0" mnemonicParsing="false" onAction="#validerCommercant" prefHeight="22.0" prefWidth="200.0" styleClass="validerButton" text="Valider">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

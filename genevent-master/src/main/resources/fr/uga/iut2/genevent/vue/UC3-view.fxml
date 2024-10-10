@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.DetailedViewController">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <HBox prefHeight="523.0" prefWidth="967.0">
+         <children>
+            <VBox prefHeight="503.0" prefWidth="487.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="53.0" prefWidth="490.0" text="Caractéristiques de l'emplacement">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="18.0" prefWidth="324.0" text="Type">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="18.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <SplitMenuButton fx:id="typeMenuButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="531.0" text="SplitMenuButton">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Type 1" />
+                        <MenuItem mnemonicParsing="false" text="Type 2" />
+                        <MenuItem mnemonicParsing="false" text="Type 3" />
+                     </items>
+                     <VBox.margin>
+                        <Insets left="18.0" right="18.0" />
+                     </VBox.margin>
+                  </SplitMenuButton>
+                  <CheckBox fx:id="gasCheckBox" mnemonicParsing="false" prefHeight="45.0" prefWidth="313.0" text="Gaz">
+                     <VBox.margin>
+                        <Insets left="55.0" top="20.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="waterCheckBox" mnemonicParsing="false" prefHeight="45.0" prefWidth="313.0" text="Eau">
+                     <VBox.margin>
+                        <Insets left="55.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="electricityCheckBox" mnemonicParsing="false" prefHeight="45.0" prefWidth="313.0" text="Electricité">
+                     <VBox.margin>
+                        <Insets left="55.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <Label prefHeight="18.0" prefWidth="209.0" text="Commerçant">
+                     <VBox.margin>
+                        <Insets left="18.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="merchantTextField" promptText="Nom du commercant">
+                     <VBox.margin>
+                        <Insets left="18.0" right="18.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="46.0" prefWidth="487.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleSave" prefHeight="26.0" prefWidth="112.0" text="Valider">
+                           <HBox.margin>
+                              <Insets right="18.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="428.0" prefWidth="489.0">
+               <children>
+                  <GridPane fx:id="matrixGridClone" alignment="CENTER" hgap="5" maxWidth="500" prefWidth="440.0" vgap="5">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="1043.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox prefHeight="633.0" prefWidth="1043.0">
+            <children>
+                <VBox prefHeight="633.0" prefWidth="534.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="64.0" prefWidth="546.0" text="Flea Market Manager">
+                            <font>
+                                <Font name="System Bold" size="31.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="20.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label prefHeight="29.0" prefWidth="253.0" text="Bonjour,">
+                            <font>
+                                <Font name="System Bold" size="26.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="50.0" top="25.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="253.0" text="Bienvenue!" textFill="#161dda">
+                            <font>
+                                <Font name="System Bold" size="26.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="30.0" left="50.0" />
+                            </VBox.margin></Label>
+                        <Label prefHeight="18.0" prefWidth="156.0" text="Adresse e-mail">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="50.0" top="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="userEmailTextField" prefHeight="37.0" prefWidth="418.0" promptText="marchepuce@gmail.com">
+                            <VBox.margin>
+                                <Insets left="50.0" right="50.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <Label prefHeight="18.0" prefWidth="156.0" text="Mot de passe">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="50.0" top="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="userPasswordField" prefHeight="38.0" prefWidth="418.0" promptText="**********">
+                            <VBox.margin>
+                                <Insets left="50.0" right="50.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </PasswordField>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="487.0">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets top="50.0" />
+                            </VBox.margin>
+                            <children>
+                                <Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" prefHeight="46.0" prefWidth="121.0" styleClass="loginButton" text="S'identifier">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets right="40.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#newUserMenuItemAction" prefHeight="46.0" prefWidth="121.0" styleClass="signUpButton" text="S'inscrire">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="668.0" prefWidth="541.0" styleClass="vboxdriote">
+                    <children>
+                        <Label prefHeight="44.0" prefWidth="485.0" textFill="#1e68b2">
+                            <font>
+                                <Font name="System Bold" size="31.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="45.0" />
+                            </padding>
+                        </Label>
+                        <ImageView fitHeight="202.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@logo.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets left="170.0" top="175.0" />
+                            </VBox.margin>
+                        </ImageView>
+                    </children></VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

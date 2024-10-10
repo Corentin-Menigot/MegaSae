@@ -1,0 +1,9 @@
+.validerButton{
+-fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+
+.validerButton:hover{
+ -fx-background-color: #0b7dda;
+}
